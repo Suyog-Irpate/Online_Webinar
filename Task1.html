@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webinar Landing Page</title>
+    <link rel="stylesheet" href="t1style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Lumanosimo&family=Tektur:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo head">
+        <i class="fa fa-adn"><strong>ccelerate</strong></i>
+      </div>
+      <div class="tagline head">Grow with us <i class="fa fa-line-chart"></i></div>
+    </header>
+    <main>
+      <div>
+        <h2 class="title">Join Our Webinar!</h2>
+        <p>Unlock the Secrets of Personalized Learning</p>
+      </div>
+      <div class="abtform">
+        <div class="about">
+          <h3 class="sub-title title">About the Webinar</h3>
+          <p>
+            Personalized learning webinars provide a dynamic educational
+            experience, allowing participants to tailor their learning path.
+            Learners engage with content aligned to their interests, goals, and
+            preferred pace, fostering a deeper understanding. This approach
+            accommodates diverse learning styles through interactive sessions,
+            discussions, and real-life scenarios. 
+            
+            <div class="section3">
+
+                <i class="fa fa-calendar"> September 3rd 2023</i>
+                <i class="fa fa-clock-o"> 10:00 AM to 1:00 PM</i>
+                <i class="fa fa-ticket"> FREE</i>
+    
+            </div>
+          </p>
+        </div>
+        <div class="form">
+          <form action="">
+            <h3 class="sub-title title">Register</h3>
+            <div class="insider">
+              <span>Email</span>
+              <input
+                type="email"
+                name=""
+                class="box"
+                placeholder="enter your email"
+                id=""
+              />
+              <span>Name</span>
+              <input
+                type="Name"
+                name=""
+                class="box"
+                placeholder="enter your Name"
+                id=""
+              />
+              <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me" />
+                <label for="remember-me">Remind me</label>
+              </div>
+              <input type="submit" value="Register" class="btn" id="btn" />
+            </div>
+            <!-- <p>forget password ? <a href="#">click here</a></p> -->
+            <!-- <p>don't have an account ? <a href="#">create new</a></p> -->
+          </form>
+        </div>
+      </div>
+    </main>
+    <section class="host">
+      <h3 class="title">About the Host</h3>
+      <div class="host2">
+        <div class="host3">
+          <h5 class="namee">Jane Smith</h5>
+          <p>
+            is a knowledgeable and experienced expert in the field, offering valuable insights and guidance. They engage participants with engaging presentations, foster discussion, and provide a platform for interactive learning. Their expertise and engaging delivery make the webinar informative and engaging.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/howto-recording/e6z3le-hosts-girl_1000000000000000000028.png"
+            alt="Host"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="t1script.js"></script>
+  </body>
+  <script>
+    const boxElement = document.getElementById("btn");
+    //add click event listener to element
+    boxElement.addEventListener("click", function () {
+      alert("Registration succesfull :) ");
+    });
+    //login from
+    let loginForm = document.querySelector(".login-form-container");
+
+    document.querySelector("#login-btn").onclick = () => {
+      loginForm.classList.toggle("active");
+    };
+    document.querySelector("#close-login-btn").onclick = () => {
+      loginForm.classList.remove("active");
+    };
+  </script>
+</html>
